@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #CB1406;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: center; /* Center content */
+        }
+        .image {
+            width: 100px; /* Adjust image size */
+            height: 100px;
+            border-radius: 50%; /* Round image corners */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .skills, .projects {
+            display: flex; /* Display skills and projects horizontally */
+            justify-content: center; /* Center skills and projects horizontally */
+            margin-top: 20px; /* Space between sections */
+            flex-wrap: wrap; /* Allow projects to wrap to next line */
+            font-size: x-large;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+        .skill, .project {
+            text-align: center;
+            margin: 0 20px; /* Space between items */
+            flex: 1 1 300px; /* Equal width for items, with maximum width */
+            background-color: #f8f9fa; /* Light background color */
+            padding: 20px; /* Padding around each item */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .skill img, .project img {
+            width: 80px; /* Adjust image size */
+            height: 80px;
+            border-radius: 50%; /* Round image corners */
+            object-fit: cover; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space below image */
+        }
+        .skill h4, .project h4 {
+            margin: 0; /* Remove default margin */
+            font-size: 16px; /* Adjust text size */
+            color: #333; /* Dark text color */
+        }
+        .project p {
+            font-size: 14px; /* Adjust description text size */
+            margin-top: 10px; /* Space above description */
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        nav {
+            background-color: #f8f9fa; /* Light background for navigation */
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Display navigation links horizontally */
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Change color on hover */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+    </style>
+</head>
+    <header>
+        <h1>Manju Varghese</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+    <div style="padding:15px;border-radius:25px;">
+        <img class="image" src="F:/IBM/Welcome.jpeg" alt="Image Description" width="250" height="250">
+        
+        <!-- Text content -->
+        <div class="text">
+            <h1 text-align:center;>Hey There .... </h1>
+            <h3 text-align:center;>By completing this Professional Certificate, you may be eligible to earn prior learning credit toward one of these eligible degree programs if you are admitted and enroll.</h3>
+        </div>  
+      </div>
+      <section class="projects">
+        <div class="section-title">Skills</div>
+        </section>
+      <section  class="skills">
+        <div class="skill">
+            <img src="F:/IBM/html.png" alt="Skill 1 Logo">
+            <h4>1.5 Year Experience</h4>
+            </div>
+            <div class="skill">
+            <img src="F:/IBM/css.png" alt="Skill 2 Logo" >
+            <h4>3 Year Experience</h4>
+        </div>
+        <div class="skill">
+            <img src="F:/IBM/js.png" alt="Skill 3 Logo" >
+            <h4>2 Year Experience</h4>
+        </div>
+        <div class="skill">
+            <img src="F:/IBM/java.png" alt="Skill 3 Logo" >
+            <h4>1 Year Experience</h4>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="section-title">Projects</div>
+        </section>
+        <section class="projects">
+        <div class="project">
+            <h4>Project 1</h4>
+            <h4>This is a sample description for Project 1. Replace with actual project details.</h4>
+        </div>
+        <div class="project">
+            <h4>Project 2</h4>
+            <h4>This is a sample description for Project 2. Replace with actual project details.</h4>
+        </div>
+        <div class="project">
+           <h4>Project 3</h4>
+            <h4>This is a sample description for Project 3. Replace with actual project details.</h4>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="section-title">Recommendations</div>
+        </section>
+        <section class="projects">
+        <div class="project">
+            <h4>Working with Client's Name was a pleasure. They demonstrated exceptional problem-solving skills and a keen eye for detail. Their contributions to our project were invaluable, and I would highly recommend them for their dedication and professionalism."            </h4>
+        </div>
+        <div class="project">
+            <h4>"Client's Name consistently impressed us with their ability to meet tight deadlines while delivering high-quality work. They are a proactive team player with excellent communication skills. I would not hesitate to work with them again on future projects."</h4>
+        </div>
+        <div class="project">
+            <h4>"I had the pleasure of collaborating with Client's Name on several initiatives. Their strong technical expertise and creative problem-solving approach were instrumental in achieving project success. They are a valuable asset to any team."
+            </h4>
+        </div>
+    </section>
+    <div class="form-container">
+        <h3>Add New Recommendation</h3>
+        <form id="recommendation-form">
+            <label for="recommendation-title">Title:</label><br>
+            <input type="text" id="recommendation-title" name="recommendation-title" required><br>
+            <label for="recommendation-text">Text:</label><br>
+            <textarea id="recommendation-text" name="recommendation-text" rows="4" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</header>
+    <!-- Other sections (Skills, Projects, Recommendations) will go here -->
+</html>
